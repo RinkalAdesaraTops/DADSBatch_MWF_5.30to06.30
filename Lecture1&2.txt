@@ -1,0 +1,33 @@
+DBMS - database management system
+SQL - Structured Query Language
+Table Creation Query
+1)create table tbl_name
+(
+  Id int PRIMARY KEY AUTO_INCREMENT,
+  Name varchar(50) NOT NULL,
+  Age int,
+  Salary int
+);
+
+2) INSERT INTO tbl_name (`Id`,`Name`,`Age`,`Salary`)
+VALUES('',"Testing123",25,27600);
+
+3)Display -- SELECT * FROM tbl_name;
+4)Selected column,  SELECT Name,Age FROM tbl_name;
+5) Fields Nick Name - using AS keywords --
+SELECT Name AS Username,Age AS UserAge FROM `users`;
+6)Condition - Where
+--> SELECT * FROM `users` where Id=5;
+Relational Operators -- <,>,<=,>=,==,!=
+--> SELECT * FROM `users` where Age >= 18;
+7)LIKE query
+-->starting from p character then any 
+SELECT * FROM `users` WHERE Name LIKE 'p%';
+-->Ending to p character before any 
+SELECT * FROM `users` WHERE Name LIKE '%p';
+-->First character start from t third character will be p before & after any character
+SELECT * FROM `users` where Name LIKE "t%p%";
+
+
+0 to 255 - unsigned
+-127 to 128 -signed
